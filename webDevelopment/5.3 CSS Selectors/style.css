@@ -1,0 +1,34 @@
+ol {
+  margin-left: -40px;
+  margin-top: -20px;
+  list-style-position: inside;
+}
+
+/* Write your CSS below, don't change the rules above. */
+
+/*simply applyinh the tag to change the color and here is the paragraph tag (p)*/
+p {
+  color:red;
+}
+
+/*using class selector to bring changes to all the line and tags */
+.note {
+  font-size: 20px;
+
+}
+
+/*using the id as to applied to one elelment in a single HTML*/
+#id-selector-demo {
+  color:green;
+}
+
+/*Universal element to bring changes to all no matter what class or id we have */
+* {
+  text-align: center;
+
+}
+
+/*draggable element*/
+li[value="4"]{
+  color:blue;
+}

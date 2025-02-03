@@ -1,0 +1,20 @@
+.red-text{
+    color:red
+}
+
+/* using selector.notation we can have the specific colour */
+
+h1.red-text{
+    color:red
+}
+
+h2.red-text{
+    color: blue
+}
+
+h3.red-text{
+    color: green
+}
+
+
+

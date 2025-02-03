@@ -1,0 +1,36 @@
+/* se CSS (not HTML) to make all the images 200px heigh and 200px wide */
+
+.color-title + img{
+    font-weight: normal;
+    height: 200px;
+    width: 200px;
+}
+
+/* img {
+    height: 200px;
+    width: 200px;
+
+} */
+
+/*gives the color red */
+#red {
+    color:red;
+
+}
+
+#blue {
+    color:blue; 
+}
+
+#orange {
+    color: orange;
+
+}
+
+#green {
+    color:green;
+}
+
+#yellow {
+    color: yellow;
+}
