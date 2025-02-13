@@ -1,0 +1,29 @@
+/* Don't change the existing CSS. */
+
+/*No need of padding casuse padding to .box shared by all dive */
+.box {
+  background-color: blue;
+  padding: 10px; /*shared by all box becasue of class box shared by all div*/
+}
+
+.inner-box{
+  background-color: red;
+  
+}
+
+p {
+  color: yellow;
+  margin: 0;
+  padding: 0;
+}
+
+#outer-box{
+  background-color: purple;
+}
+
+.white-text{
+  color: white;
+  
+  
+}
+
