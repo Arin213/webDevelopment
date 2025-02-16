@@ -4,12 +4,22 @@
 
 /* using selector.notation we can have the specific colour */
 
-h1.red-text{
+h2.red-text{
     color:red
-}
+} 
 
 h2.red-text{
-    color: blue
+    color: blue;
+    /* display: inline;
+    display: block; */
+
+    /* block will allow us to set the height and width
+    inline will allow us the elements to go the same line. */
+    display: inline-block; 
+    
+    /* will let the emelemnt to go dissapear */
+    /* display: none; */
+    
 }
 
 h3.red-text{
