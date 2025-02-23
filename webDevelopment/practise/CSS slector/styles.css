@@ -1,30 +1,49 @@
-.red-text{
-    color:red
-}
+/* .red-text{
+    color:rgb(186, 69, 69)
+    
+} */
+
 
 /* using selector.notation we can have the specific colour */
 
-h2.red-text{
-    color:red
-} 
+/* h2.red-text{
+    color:rgb(39, 43, 153)
+}  */
 
-h2.red-text{
-    color: blue;
+/* h2.red-text{
+    color: blue; */
     /* display: inline;
     display: block; */
 
     /* block will allow us to set the height and width
     inline will allow us the elements to go the same line. */
-    display: inline-block; 
+    /* display: inline-block;  */
     
     /* will let the emelemnt to go dissapear */
     /* display: none; */
     
+/* } */
+
+img{
+    background-color: bisque;
+    height: 400px;
+    width: 500px;
+    float: left;
+    
 }
 
-h3.red-text{
+footer {
+    clear: both;
+    clear: left;
+}
+/* p{ */
+    /* color: rgb(1, 11, 11); */
+    /* float:left ; */
+/* } */
+
+/* h3.red-text{
     color: green
 }
-
+ */
 
 
