@@ -1,0 +1,45 @@
+.container {
+    display:grid;
+
+    /* Usually grid container with grid-items  with row and column collectively called 
+    tracks called row tracks and column tracks grid cells are there
+    usually content sit between the rows and columns track
+    we can combine the items or merged to form single row items or columns items
+    and there are lines called horizontal and vertical lines which are called
+    grid lines 
+    combining terms:
+    1.Grid
+    2.grid lines
+    3. grid tracks
+    4. grid cells
+    5. container
+    6. items
+    */
+    height: 100vh;
+    gap:3rem;
+    /* using fr gives the responsiveness */
+    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+
+.item {
+    background-color: aqua;
+    color: black;
+    /* centering the items */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+.cowboy {
+    background-color: #00b9ff;
+    /* grid-column: span 2; */
+    /*grid-column is the shorthand property of the 
+    grid-column-start and grid-column-end and 
+    same goes for the row as well so we can also specify the positon
+    by using grid-column-sart and grid-colum-end instead of direct grid-column */
+    grid-column-start: 1;
+    grid-column-end: 3;
+}

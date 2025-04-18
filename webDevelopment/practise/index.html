@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <head>
+        <title>flex practise</title>
+        <style>
+            .container{
+                border: 5px solid orange;
+                color:black;
+                display:flex;
+                flex-direction:row;
+                /* this will let the item to fit in in single line no matter what */
+                /* flex-wrap: nowrap;  */
+            
+                /* this will let the item to go to the next line  */
+                flex-wrap: nowrap;
+
+                /* inorder to workd the align items we have to justify the height of the monitor or 
+                of the window or vh =viewPort height:  of the monitor; */
+                
+                /* THIS WILL PUT THE ITEMS TO THE TOP */
+                align-items: flex-start; 
+
+                /*THIS WILL ALSO MAKE THE ITEM AT THE TOP*/
+                align-items: baseline;
+
+                /*THIS WILL MAKE THE ITEM AT THE BUTTOM */
+                align-items: flex-end;
+                
+                /*THIS WILL MAKE THE ITEM AT THE CENTRE*/
+                align-items: center;
+
+                /*THIS WILL MAKE THE ITEM STRETCH*/
+                align-items: stretch;
+
+
+                
+                /*in order to work the aling-items, height must be declared as vh*/
+                height: 70vh;
+
+
+            }
+
+            .red{
+                background-color: #b30833;
+                order: 05;
+            }
+
+            .Orange{
+                background-color: orange;
+                /* order: 0; */
+            }
+
+            .yellow {
+                background-color: yellow;
+                order: 0;
+            }
+
+            .green {
+                background-color: green;
+            }
+
+            .Blue{
+                background-color: blue;
+            }
+
+            .Indigo{
+                background-color: indigo;
+            }
+
+            .purple{
+                background-color: purple;
+
+            }
+
+        </style>
+        <body>
+            <div class="container">
+                <div class="red">Red</div>
+                <div class="Orange">Orange</div>
+                <div class="yellow">Yellow</div>
+                <div class="green">Green</div>
+                <div class="Blue">Blue</div>
+                <div class="Indigo">Indigo</div>
+                <div class="purple">Purple</div>
+            </div>
+            
+        </body>
+    </head>
+
+</html>

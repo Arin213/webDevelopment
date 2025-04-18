@@ -1,0 +1,52 @@
+.grid-container {
+    display: grid;
+    /* grid-template: 100px auto / 200px auto; */
+
+    /* AUTO-SIZED: for rows content is fitted but cannot made changes
+    in height but for columns the auto has the 100% width and can be shrinkable */
+    /* grid-template-rows: 200px auto;
+    grid-template-columns: 300px auto; */
+
+    /* FRACTION-SIZED: the width and the height can be shrinkable 
+    and for the rows the content get bigger then the row size grows accordingly for
+    example if 1st row is 1fr and 2nd row is 2fr which is the double of 1fr then
+    if we add the content in 2nd row and its start to grow then 1st row also start to grow its size even
+    the content is not added  and for the column and rows the responsive would be there according the given
+    fraction size for example if we shrink, then first column or first row would start to shrink and also the next column
+    and rows but accordingly like 1fr and 2fr will go accordingly maintaining their own siez*/
+    /* grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 2fr; */
+    
+    /* MINMAX SIZE: it allows the horzinotal side to be customize to grow or shrink like 
+    for example if we allow the column fo content to be min = 400px and max = 800px
+    which column can grow upto 800px max and shrink upto 400px min */
+    /* grid-template-rows: 200px 400px;
+    grid-template-columns: 200px minmax(400px, 800px); */
+    
+    /* REPEAT(x, N): let us gives the shortcut to put the required number of 
+    rows and cloumns where x = times and N = pixel,fr, rem... etc where we don't need to repeat
+    the number of rows like 200px , 200px, ... and goes same for column as well  */
+    /* grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); */
+
+    /* Suppose we have the items is more defined in grid-container lets say 5
+    now we defined the grid template 200px 200px /200px 200px  that is row and column of 
+    2x2 now out of 5 4 can be placed in grid but 1 left which will be at buttom and it will added
+    according to its content by default. Now if we want to make the size according to the defined row and column
+    then we can use grid-auto-rows or grid-auto-columns*/
+    grid-template: repeat(2, 200px) /200px 200px;
+
+    /* here the last item will be at buttom and it size is according to the content
+    so in order to make the size same as of defined 2x2 then we can use 
+    grid-auto-rows: xpx */
+    grid-auto-rows: 200px;
+    gap: 5px; 
+
+}
+
+p{
+    background-color: lightblue;
+    margin: 0;
+    /* font-size: 20px; */
+    /* text-align: center; */
+}
