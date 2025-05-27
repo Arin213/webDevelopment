@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Containers are a fundamental building block of Bootstrap that
+     contain, pad, and align your content within a given device or
+     viewpirt. -->
+
+    <!-- basic or normal container 
+     use for the fixed-width container and it adjust its width base on the 
+     breakpoints (lke sm, md, lg, etc)
+     it's centered on the page and adds margin on both sides
+     
+     1.responsive fixed-width layout can widths adjust-yes
+     2. fills full width - no
+     -->
+    <div class="container my-5 bg-primary shadow">
+        <h2>normal container</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="container bg-primary text-white my-4">
+        <p>This container changes width at breakpoints!</p>
+    </div>
+
+    <!-- "container-fluid" class is always the 100% width of 
+     the browser
+     THis is a full-width container it always 100% of the width of the screen, no matter what
+     the screen size is
+     There's no margin on the sides
+     best case to build edge-to-edge layouts(like banners, maps, or custom sections)
+     1.always 100% width -no
+     2. fill full width - yes -->
+    <div class="container-fluid bg-success">
+        <h2>fluid container</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <!-- container-lg will take the width 100% until scrren is of lg
+     and it will adjust automatically to the center if the screen is lg -->
+    <div class="container-lg my-5 bg-info">
+        <h2>100 % width until lg screen, then container</h2>
+        <p class="lead"> ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, vel!</p>
+    </div>
+
+    <!-- container-xl let the screen to be 100% width untill the screen is at 
+     extra large(xl) and then it also start to get centered. -->
+    <div class="container-xl my-5 bg-danger">
+        <h2>100% width until screen get extra large(xl)</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae facere rerum perferendis, modi adipisci tempore
+            quas ducimus? Distinctio placeat, vel delectus commodi repellendus sed quaerat saepe est iusto illo
+            recusandae.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

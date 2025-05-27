@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colours and Typography</title>
+    <!-- adding bootstrap CDN link for style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- heading tags -->
+    <h1>bootstrap Colours and Typography</h1>
+    <h2>This is h2</h2>
+    <h3>This is h3</h3>
+
+    <!-- we can simply add the class for h1, h2, h3 and son to get 
+     the heading tags with the specific given font weight probably fw=500 -->
+    <h2 class="h3">This is an h2 tag with the h3 class</h2>
+
+    <!-- display headings
+     this will let the text or heading littile bit bigger than the heading tags
+     with the font wright lower than the heading tags  probably fw= 300 -->
+    <h1 class="display-1">display 1 heading</h1>
+    <h1 class="display-4">display 2 heading</h1>
+    <h1 class="display-6">display 6 heading</h1>
+
+    <!-- we can also use this display class not just in heading but also in paragraph -->
+     <p class="display-1">p tag with display-1 class</p>
+     <p class="display-2">p tag with display-2 class</p>
+     <p class="display-3">p tag with display-3 class</p>
+
+    <!-- lead text & alignment 
+     lead text is a parapgraph text which is slightly bigger -->
+     
+    <!-- here paragraph with out class lead but normal paragraph -->
+     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <!-- here paragraph with class lead which is slightly bigger than normal paragraph -->
+     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    
+    <!-- now we can also add the another class text-(start, center, end) to align the text
+    basically we don't need to specify the text-start, we can simply add text only this will
+    let the text at start position -->
+    <p class="lead text-start">hello world!</p>
+    <p class="lead text">hello world!</p>
+    <p class="lead text-center">hello world!</p>
+    <p class="lead text-end">hello world!</p>
+
+    <!-- text decoration & font weight 
+     we can decorate the text while giving underline or line though the text
+     and also give the fw i.e. font-weight to the text -->
+
+    <!-- this will give the underline to the text -->
+    <p class="text-decoration-underline">this is underlined text</p>
+
+    <!-- this will pass through the text  -->
+    <p class="text-decoration-line-through">this is line through text</p>
+    
+    <!-- this text is bold because of fw-bold(font weight =  bold) -->
+    <p class="fw-bold">This is a bold text</p>
+
+    <!-- this is small text -->
+    <small>this is small text</small>
+
+    <!-- text color 
+    for text colour there are primary = blue, secondary= grey
+    success= green, danger= red, warning= yellow, info= light blue, light= white, dark= black, 
+    
+    now to give the colour to text we can simply pass the class
+    text -[colour name like primary, secondary, success, danger, warning, info, light, dark]
+    -->
+    <p class="text-primary">theme primary colour</p>
+    <p class="text-secondary">theme secondary colour</p>
+    <p class="text-info">theme info colour</p>
+    <p class="text-warning">theme warning colour</p>
+    <p class="text-success">theme warning colour</p>
+    <p class="text-danger">theme danger colour</p>
+    <p class="text-muted">theme danger colour</p>
+
+    <!-- bg-colors
+     bg(background color) which give us the background color and 
+     we can pass the colour to the background as well 
+     the text-colour is automated i think  -->
+    <p class="text-white bg-primary">theme primary colour</p>
+    <p class="text-white bg-secondary">theme secondary colour</p>
+    <p class="text-white bg-info">theme info colour</p>
+
+
+
+    <!-- NOTE: ALWAYS PUT "btn " AS BASE CLASS -->
+    <!-- BUTTOM COMPONENTS -->
+    <!-- basic buttoms -->
+     <h2>Buttons</h2>
+
+    <!-- now we create buttons using class called "btn" i.e. button 
+     and we can pass the colour in them which will be the backgorund colour 
+     using class called "btn btn-[primary, secondary, info, success... etc]"
+     we can also used the other tag like anchor tag (<a></a>) as well -->
+    <button class="btn btn-primary">primary button</button>
+    <button class="btn btn-secondary">secondary button</button>
+    <button class="btn btn-info">info button</button>
+
+    <!-- anchor tags as buttons -->
+    <!-- we can use the anchor tag to create the buttom where
+     one click to get access to the new or next or back pages -->
+    <h2>links as buttons</h2>
+    <!-- creating the button with anchor tag and passing "#" which means 
+     no link  -->
+    <a href="#" class="button btn btn-info">info anchor button</a>
+    <a href="#" class="button btn btn-success">success anchor button</a>
+
+
+
+
+    <!-- button sizes 
+     we can also create the size of button by pasisng 
+     the size like (btn-(size like lg, sm, md.. .etc)) and can form the 
+     combination of colouration as well -->
+    <h2>button sizes</h2>
+    <!-- lg refers to large and sm referes to small however
+     if for default no need to pass the size -->
+    <button class="btn btn-lg btn-danger">large danger button</button>
+    <button class="btn btn-sm btn-warning">small warning button</button>
+    
+    <!-- this is default -->
+    <button class="btn  btn-success">default success button</button>
+
+
+    <!-- outlined style -->
+    <h2>Button Styles</h2>
+    <!-- we can also style the button like outlining the button like 
+     hover effect perhaps while passing class called "btn-outline" 
+     so btn-outline will remove the backgorund colour untill mouse don't get hover
+     in it so after hovering mouse to the button then it will show the colour of btn-(colour like 
+     primary , secondary, .... )
+     little bit hover effect using outline-->
+    
+    <button class="btn btn-outline-secondary btn-lg">large outlined secondary botton</button>
+    <button class="btn btn-outline-primary">outlined primary botton</button>
+
+    <!-- button groups 
+    we can also now group the button inside the div using the class
+    called "btn-group" this will allow the button to be together 
+    also we can change the colour of button according to our choice-->
+    <h2>Button groups</h2>
+    <div class="btn-group">
+        <!-- let's use the anchor tag -->
+        <a href="#" class="btn btn-outline-primary">button with blue</a>
+        <a href="#" class="btn btn-outline-secondary">button with grey</a>
+        <a href="#" class="btn btn-outline-success">button with green</a>
+
+    </div>
+
+     <!-- adding bootstrap CDN link for scrip -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

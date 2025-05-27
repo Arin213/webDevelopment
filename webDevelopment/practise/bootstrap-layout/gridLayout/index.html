@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- basic grid 
+     first we go with the row element to get the item inside the div
+     and then we create the div with class row and inside the row div
+     we create another div with the coated element
+     and then finally we divide them-->
+    <div class="container-lg my-5">
+        <h2>Basic grid</h2>
+        <div class="row">
+            <div class="col">
+                <div class="p-5 bg-primary text-light">col1</div>
+            </div>
+            <div class="col">
+                <div class="p-5 bg-primary text-light">col2</div>
+            </div>
+            <div class="col">
+                <div class="p-5 bg-primary text-light">col3</div>
+            </div>
+            <div class="col">
+                <div class="p-5 bg-primary text-light">col4</div>
+            </div>
+        </div>
+
+    </div>
+    <!-- as we know the grid layout system is 12 column layout system 
+     so, we can specify each accordingly  -->
+    <div class="container-lg my-5">
+        <h2>column width</h2>
+        <div class="row">
+            <!-- take 6 columns and makes 1 -->
+            <div class="col-6">
+                <div class="p-5 bg-primary text-light">col1</div>
+            </div>
+            <!-- takes 3 columns and makes 1 -->
+            <div class="col-3">
+                <div class="p-5 bg-primary text-light">col2</div>
+            </div>
+            <!-- takes 3 columns and makes 1 -->
+            <div class="col-3">
+                <div class="p-5 bg-primary text-light">col3</div>
+            </div>
+        </div>
+
+    </div>
+    <!-- so for the reponsiveness we can go with break points  -->
+    <div class="container-lg my-5">
+        <h2>responsive column width</h2>
+        <div class="row">
+            <!-- here by default the width is 100% if the devices are mobile
+             and if the screen get larger than mobile then it will break into 
+             or take the 4 columns and makes 1 and when screen gets larger reach to lg 
+             then it will take the 6 columns and makes 1 -->
+            <div class="col-sm-4 col-lg-6">
+                <div class="p-5 bg-primary text-light">col1</div>
+            </div>
+
+            <!-- this take 3 columns spaces and for large it takes 3 columns spaces as well -->
+            <div class="col-sm-3 col-lg-3">
+                <div class="p-5 bg-primary text-light">col2</div>
+            </div>
+            <div class="col-sm-3 col-lg-3">
+                <div class="p-5 bg-primary text-light">col3</div>
+            </div>
+        </div>
+
+    </div>
+    <!-- so for the justifying, 
+     we can look at the properties of flex box like justify-content-center
+     or end or start and if we look at the divs below 
+     col is distributed with md-3 *3 which 9 so 3 columns are missing 
+     so what will happen is that the missing part will be left out as there won't be
+     box to filled in the screen so 
+     flexbox like properties can be handy to play along like if we want the box 
+     to be start then it will be at start and for center 
+     it will be at center and for end it will be at the end 
+     so here md refers to medium size so width is 100% unless the screen get to 
+     md size and it will divided into 3 columns taking each 3 columns spaces and 
+     left the remaing spaces as it is without occupying. -->
+    <div class="container-lg my-5">
+        <h2>justifying columns</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="p-5 bg-primary text-light">col 1</div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-5 bg-primary text-light">col 2</div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-5 bg-primary text-light">col 3</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout part 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<style>
+    section {
+        padding: 60px 0;
+    }
+</style>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="container-xxl">
+            <a href="#intro" class="nanbar-brand">
+                <span class="fw bold text-secondary">
+                    <!-- this is the name of the navbar -->
+                    Autumn-kiss - the book
+                </span>
+            </a>
+            <!-- toggle buttom for mobile nav -->
+            <button class="navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span></button>
+        </div>
+        <!-- navbar links -->
+         <div class="collapse navbar-collapse justify-content-end align-center"
+         id="main-nav">
+         <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#topic">About The Book</a>
+            </li>
+         </ul>
+         </div>
+    </nav>
+
+
+    <!-- main image and intro text -->
+    <section id="intro">
+        <div class="container-lg">
+            <!-- let the item to be in center -->
+            <div class="row justify-content-center">
+                <!-- so first the width is 100% for the 
+                 small devices and when the size get to md(medium)
+                 the column gets divided into 5 parts -->
+                <!-- so here the text would be in center when the width is 100% 
+                 or on a small devices and when the size gets to md then 
+                 the text goes to the start -->
+                <div class="col-md-5 text-center text-md-start">
+                    <h1>
+                        <!-- this would be darkish -->
+                        <div class="display-2">Autumn-kiss</div>
+                        <!-- this would be slighty greywish -->
+                        <div class="display-5 text-muted">Autumn tree</div>
+                    </h1>
+                    <p class="lead my-4 text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <a href="#pricing" class="btn btn-secondary btn-lg">Buy now </a>
+                </div>
+                <!-- here the d-none class will let the img item to unseen when the screen is smaller and 
+                 when the screen gets md size then d-md-block will let the image to be seen in 
+                 the screen. -->
+                <div class="col-md-5 text-center d-none d-md-block">
+                    <!-- img-fluid makes your image automatically resize to fit its 
+                     parent container nicely on different screen sizes
+                     (mobile, tablet, or desktop) -->
+                    <img class="img-fluid" src="./atutumn treees.jpg" alt="autumn treees">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- pricing plans -->
+    <section id="pricing" class="bg-light mt-5">
+        <!-- 100% width untill the size upto the container-lg  -->
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Pricing Plans</h2>
+                <p class="lead text-muted">Choose a pricing plan to suit you.</p>
+            </div>
+        </div>
+
+        <!-- row with margin top bottom and items aligning
+          to center and justify content to be center -->
+        <div class="row my-5 align-items-center justify-content-center g-0">
+            <!-- take the width size upto 8/12 and as it grows 
+            upto lg then takes upto 4/12 and for xl, it would take
+            upto 3/12 -->
+            <div class="col-8 col-lg-4 col-xl-3">
+                <!-- border-0 would reduce to 0 -->
+                <div class="card border-0 ">
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title">Starter Edition</h4>
+                        <p class="lead card-subtitle">eBook download only</p>
+                        <p class="display-5 my-4 text-primary fw-bold">$12.99</p>
+                        <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.</p>
+                        <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- another pricing plans -->
+            <div class="col-9 col-lg-4 ">
+                <!-- border-->
+                <div class="card border-2 border-primary">
+                    <!-- card header is just header of the card -->
+                    <div class="card-header text-center text-primary">Most Popular</div>
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title">Complete Edition</h4>
+                        <p class="lead card-subtitle">eBook download & all updates</p>
+                        <p class="display-5 my-4 text-primary fw-bold">$18.99</p>
+                        <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.</p>
+                        <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-8 col-lg-4 col-xl-3">
+                <!-- border-0 would reduce to 0 -->
+                <div class="card border-0 ">
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title">Ultimate Edition</h4>
+                        <p class="lead card-subtitle">download, updates & extras</p>
+                        <p class="display-5 my-4 text-primary fw-bold">$24.99</p>
+                        <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.</p>
+                        <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- topics at a glance -->
+
+
+
+    <!-- reviews list -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

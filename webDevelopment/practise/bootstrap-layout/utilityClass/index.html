@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utility Class</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- margin and padding 
+    m = margin
+    p = padding 
+    now for class m-N where N is the number so bigger the number larger margin and 
+    margin goes to all direction 
+    and same goes to the padding as well like here 
+    p-N where N is the number 
+    now for the left and right and up and down we got the 
+    x and y where
+    x = left and right axis
+    y = up and down axis-->
+    <div class="bg-primary m-1 p-1">Small maring and padding</div>
+    <div class="bg-primary m-5 p-5">large maring and padding</div>
+
+    <!-- variation in margin and padding like moving the text object to
+      left or right or up or down direction by passing m or p with x and y 
+      here my-N or mx-N or py-N or px-N  
+      where, my = margin in up and down direction 
+             mx = margin in left and right direction
+             py = padding in up and down direction
+             px = padding in left and right direction-->
+    <div class="bg-primary ">margin in y direciton, padding in x direction with default(no margin changes)</div>
+    <!-- margin and padding for x and y  -->
+    <div class="bg-primary my-3 px-5">margin in y direciton, padding in x direction</div>
+
+
+    <!-- specific direciton for each margin and padding 
+      mt = margin top
+      mb = margin button
+      ms = margin start or left [NOTE: there is no ml or mr]  
+      me = margin end or right 
+      And same goes for padding as well-->
+    <div class="bg-secondary mt-3 mb-4 ps-5 pt-4 pe-2 pb-1">m and p for each direction</div>
+
+    <!-- borders 
+     using "border" class we can apply the border
+     this is base and we can also cutomize the border class
+     with top, bottom, end and start-->
+    <h1>borders</h1>
+    <!--margin with 3 in all 4 sides and padding with 3 in all sides  -->
+    <div class="m-3 p-3 border border-danger">default borders</div>
+
+    <!-- customizing the border 
+     border formed at top and end we can see the colour of border 
+     primary in top and end-->
+    <div class="m-3 p-3 border-top border-end border-primary">individual</div>
+
+    <!-- customizing the border with start and applying the coulour
+     success i.e green and the green will appear
+     at the left most part of the border -->
+    <div class="m-3 p-3 border-start border-success">border with success</div>
+
+    <!-- we can also apply thicknes to the border
+      by simply pustting border-(x) where x = number -->
+
+    <div class="m-3 p-3 border-start border-danger border-5">Thickness of border at start</div>
+
+    <!-- we can also use the "rounded" class to put the round in the border
+     or "rounded-pill" class to form the pill shape of the border -->
+     <div class="m-3 p-3 rounded border border-5">border thickness of 5 with rounder</div>
+
+     <!-- border with pill shape -->
+      <div class="m-3 p-3 rounded-pill border border-5 bg-primary lead text-center">pill shape with rounded border in blue colour</div>
+    
+      <!-- box shadow 
+       we can use "shadow-(size like sm, lg.... etc)"
+       to give shadow to the box where default shadow would
+       be medium(md) -->
+    <h1>box shadow</h1>
+    <div class="m-3 p-3 shadow-sm">Element with small box shadow</div>
+    <div class="m-3 p-3 shadow-lg">Element with large box shadow</div>
+    <div class="m-3 p-3 shadow">Element with medium or large box shadow</div>
+
+
+    <!-- font weight 
+     dealing wit hthe font weight we have weight as well as style 
+     fw-bold 
+     fw-bolder
+     fw-light
+     fst-italic (fst = font style with italic)
+     fst-italic 
+     fw-light-->
+     <h1>font weight and style</h1>
+     <p class="fw-bold">bold text</p>
+     <p class="fw-bolder">bolder text</p>
+     <p>Normal Text</p>
+     <p class="fw-light">light text</p>
+     <p class="fst-italic">bold with italic</p>
+     <p class="fst-italic fw-light">light text with italic</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
