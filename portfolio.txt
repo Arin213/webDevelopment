@@ -8,3 +8,16 @@ https://docs.google.com/forms/d/1hfLiOgAOkw-48Jb6tNEc_ej1aHgf232fisAzECa33CU/vie
 
 my journey
 https://arin213.github.io/myJourney/ 
+
+
+full scan
+"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 2
+
+
+quick scan
+"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 1
+
+custom scan
+"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 3 -File "D:"
+
+
