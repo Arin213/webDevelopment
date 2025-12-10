@@ -1,1 +1,133 @@
 .qodo
+# ================================
+# DEPENDENCIES
+# ================================
+node_modules/
+.npm
+.yarn/
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnpm-store/
+.pnpm-debug.log*
+.yarn-error.log
+
+# ================================
+# ENVIRONMENT VARIABLES
+# ================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+*.env
+
+# ================================
+# BUILD OUTPUTS
+# ================================
+dist/
+build/
+.next/
+.nuxt/
+.out/
+output/
+coverage/
+.nyc_output/
+.cache/
+
+# ================================
+# IDE & EDITOR
+# ================================
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+
+# General
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ================================
+# RUNTIME DATA & LOGS
+# ================================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.prettier_log
+.prettierignore_log
+
+# ================================
+# TESTING
+# ================================
+.parcel-cache/
+.vscode-test/
+jest-cache/
+.jest-cache/
+
+# ================================
+# QUOKKA & CONSOLE NINJA
+# ================================
+.quokka/
+quokka.json
+quokka-localstorage.json
+temp-storage.json
+.ninja_cache/
+.console-ninja/
+
+# ================================
+# SYSTEM FILES
+# ================================
+*.pid
+*.seed
+*.pid.lock
+
+# ================================
+# CUSTOM FOLDERS (YOUR LIST)
+# ================================
+.qodo/                    # If this is generated/temp code
+sensitive/               # Definitely ignore
+private/
+secrets/
+config/local/
+
+# ================================
+# OS GENERATED
+# ================================
+ehthumbs.db
+Icon?
+[Tt]humbs.db
+desktop.ini
+
+# ================================
+# PACKAGE MANAGER SPECIFIC
+# ================================
+package-lock.json        # Only if using yarn/pnpm
+yarn.lock                # Only if using npm/pnpm
+pnpm-lock.yaml           # Only if using npm/yarn
+shrinkwrap.yaml
+npm-packages-offline-cache/
+
+# ================================
+# TEMPORARY FILES
+# ================================
+.temp/
+tmp/
+temp/
+*.tmp
+*.temp
+
+.DS_Store.DS_Store
