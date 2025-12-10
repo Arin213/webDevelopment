@@ -131,3 +131,25 @@ temp/
 *.temp
 
 .DS_Store.DS_Store
+
+# Dependencies
+node_modules/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Environment variables
+.env
+.env.local
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.log
+*.tmp
