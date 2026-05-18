@@ -1,0 +1,3 @@
+Hello from Node.js!
+Hello from Arin! this message is the output of readFile mode.
+
