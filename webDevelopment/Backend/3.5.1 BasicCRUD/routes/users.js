@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 const router = express.Router();
 
 // mock DB or fake DB (memory only)
-const users = [
+let users = [
     // {
     //     firstName: "John",
     //     lastName: "Doe",
@@ -61,6 +61,21 @@ router.get("/:id", (req, res) => {
     //if foundUser match the id then send the user data back to client
     // getting the uer profile we can add or delete the data of the user
     res.send(foundUser); // send response back to client
+
+});
+
+// delete router
+router.delete("/:id", (req,res) => {
+    const{id} = req.params // get the id from the request prameters
+
+    users = users.filter((user) => {
+        // logic of filter: if the condition is true then keep the user in the array, 
+        // if false then remove the user from the array
+        return user.ID !== id; //if the used.id === id then false. 
+    })
+
+    console.log(`the id ${id} is deleted from the database`);
+    res.send(users); // send response back to client    
 
 });
 /**
