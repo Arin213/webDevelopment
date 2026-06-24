@@ -3,21 +3,6 @@ import { userRouter, postUser, getUser, deleteUser, updateUser } from "../contro
 
 const router = express.Router();
 
-// mock DB or fake DB (memory only)
-let users = [
-    // {
-    //     firstName: "John",
-    //     lastName: "Doe",
-    //     age: 30
-    // },
-
-    // {
-    //     firstName: "Jane",
-    //     lastName: "Doe",
-    //     age: 25
-    // }
-]
-
 // insread of app.get we use router.get
 // all routes in here are starting with /users 
 // because in index.js we have app.use("/users", userRoutes);

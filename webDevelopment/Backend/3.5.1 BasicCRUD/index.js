@@ -1,6 +1,6 @@
 import express from "express";
-import {fileURLToPath} from "url";
-import { dirname } from "path";
+// import {fileURLToPath} from "url";
+// import { dirname } from "path";
 
 import userRoutes from "./routes/users.js";
 // create express app and port number 

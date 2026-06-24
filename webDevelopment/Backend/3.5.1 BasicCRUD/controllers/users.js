@@ -60,7 +60,7 @@ export const deleteUser = (req,res) => {
     users = users.filter((user) => {
         // logic of filter: if the condition is true then keep the user in the array, 
         // if false then remove the user from the array
-        return user.ID !== id; //if the used.id === id then false. 
+        return user.ID !== id; //if the user.id === id then false. 
     })
 
     console.log(`the id ${id} is deleted from the database`);
